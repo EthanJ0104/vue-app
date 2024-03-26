@@ -11877,7 +11877,8 @@ body {
 }
 
 .card-img-top {
-  max-height: 500px;
+  /*max-height: 500px;*/
+  height: 500px;
 }
 
 .modal-content {

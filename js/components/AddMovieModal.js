@@ -8,6 +8,7 @@ app.component('AddMovieModal', {
                 director: '',
                 producer: '',
                 genre: 'action',
+                rating: '',
                 qty: 1,
                 img: '',
             },
@@ -32,6 +33,7 @@ app.component('AddMovieModal', {
                 director: '',
                 producer: '',
                 genre: 'action',
+                rating: 'G',
                 qty: 1,
                 img: '',
             }
@@ -73,6 +75,15 @@ app.component('AddMovieModal', {
                     <option value="Comedy">Comedy</option>
                     <option value="Romance">Romance</option>
                     <option value="Drama">Drama</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="rating" class="form-label">Rating</label>
+                  <select id="rating" class="form-select" v-model="newMovie.rating">
+                    <option value="G">G</option>
+                    <option value="PG">PG</option>
+                    <option value="PG-13">PG-13</option>
+                    <option value="R">R</option>
                   </select>
                 </div>
                 <div class="mb-3">

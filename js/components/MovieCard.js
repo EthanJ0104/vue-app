@@ -29,6 +29,7 @@ app.component('MovieCard', {
             <h5 class="card-title">{{ movie.name }}</h5>
             <p class="card-text">Year: {{ movie.year }}</p>
             <p class="card-text">Genre: {{ movie.genre }}</p>
+            <p class="card-text">Rating: {{ movie.rating }}</p>
             <p class="card-text">Quantity: {{ movie.qty }}</p>
             <p class="d-inline-flex gap-1">
               <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" v-bind:data-bs-target="'#collapse' + instance" aria-expanded="false" v-bind:aria-controls="'collapse' + instance" style="padding-bottom: 10px;">

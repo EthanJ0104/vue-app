@@ -48,6 +48,15 @@ app.component('EditModal', {
                   </select>
                 </div>
                 <div class="mb-3">
+                  <label v-bing:for="'rating' + instance" class="form-label">Rating</label>
+                  <select v-bing:id="'rating' + instance" class="form-select" v-model="movie.rating">
+                    <option value="G">G</option>
+                    <option value="PG">PG</option>
+                    <option value="PG-13">PG-13</option>
+                    <option value="R">R</option>
+                  </select>
+                </div>
+                <div class="mb-3">
                   <label v-bind:for="'qty' + instance" class="form-label">Quantity</label>
                   <input v-bind:id="'qty' + instance" type="number" :value="movie.qty" class="form-control" size="3" v-model="movie.qty">
                 </div>

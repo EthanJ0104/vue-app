@@ -33,6 +33,9 @@ app.component('DetailModal', {
                                 <p><b>Genre: </b> {{ movie.genre }}</p>
                             </div>
                             <div class="mb-3">
+                              <p><b>Rating: </b> {{ movie.rating }}</p>
+                            </div>
+                            <div class="mb-3">
                                 <p><b>Quantity: </b> {{ movie.qty }}</p>
                             </div>
                         </div>
